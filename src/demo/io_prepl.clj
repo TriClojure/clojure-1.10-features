@@ -16,8 +16,9 @@
                         :address "127.0.0.1"
                         :port    5555
                         :name    "test io-prepl"})
+  (println "prepl server is running")
+  (println "to connect:")
+  (println "clj -e '(clojure.core.server/remote-prepl \"127.0.0.1\" 5555 *in* println)'")
   ;; wait forever
   @(promise))
 
-;; To connect:
-;; clj -e '(clojure.core.server/remote-prepl "127.0.0.1" 5555 *in* println)'
