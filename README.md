@@ -55,8 +55,8 @@ providing a higher degree of flexibility in customization.
 ### `demo.prepl`
 
 A demonstration of `clojure.core.server/prepl` that runs within a single
-process. The REPL server is run on a background thread, while the main thread
-asks for input (forms to be evaluated) from the user.
+process. The prepl is run on a background thread, while the main thread asks for
+input (forms to be evaluated) from the user.
 
 ### `demo.io-prepl`
 
