@@ -66,3 +66,27 @@ A demonstration of `clojure.core.server/io-repl`, a convenience layer on top of
 After starting the REPL server by running `clj -m demo.io-repl`, you can connect
 from another REPL using `clojure.core.server/remote-prepl` and start sending
 over forms to be evaluated.
+
+### `demo.datafy`
+
+A demonstration of `datafy` and `nav` in the `clojure.datafy` namespace.
+
+`datafy` turns an object into Clojure data, assuming that it implements the
+`Datafiable` protocol.
+
+`nav` navigates from the object to a related object or piece of data, assuming
+that it implements the `Navigable` protocol.
+
+The axes of navigation (a.k.a. *keys*) and edges (a.k.a.  *values*) are visible
+in the datafied version of the object.
+
+Part of the fun of the `datafy` and `nav` is implementing the `Datafiable` and
+`Navigable` protocols for a particular type of object. I couldn't come up with a
+good application for this here, but there are already at least a handful of
+useful protocol implementations, including URLs, SQL records, and classes.
+
+This demo uses `datafy` and `nav` on Java classes, exposing useful information
+about class members and allowing you to navigate from class to class and explore
+other classes in the process. The demo consists of a simple HTTP server using
+Pedestal to serve an HTML page. The page includes information from the datafied
+Java class and links to other objects to which you can potentially navigate.

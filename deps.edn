@@ -1,1 +1,4 @@
-{:deps {org.clojure/clojure {:mvn/version "1.10.0"}}}
+{:deps {org.clojure/clojure          {:mvn/version "1.10.0"}
+        hiccup                       {:mvn/version "1.0.5"}
+        io.pedestal/pedestal.service {:mvn/version "0.5.5"}
+        io.pedestal/pedestal.jetty   {:mvn/version "0.5.5"}}}
