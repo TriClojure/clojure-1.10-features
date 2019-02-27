@@ -1,8 +1,8 @@
 (ns demo.datafy
-  (:require [clojure.datafy               :refer (datafy nav)]
-            [clojure.pprint               :refer (pprint)]
-            [hiccup.page                  :as    hiccup]
-            [io.pedestal.http             :as    http]))
+  (:require [clojure.datafy   :refer (datafy nav)]
+            [clojure.pprint   :refer (pprint)]
+            [hiccup.page      :as    hiccup]
+            [io.pedestal.http :as    http]))
 
 (def INITIAL-NODE java.util.concurrent.Phaser)
 
