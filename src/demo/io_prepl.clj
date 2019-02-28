@@ -17,8 +17,12 @@
                         :port    5555
                         :name    "test io-prepl"})
   (println "prepl server is running")
+  (println)
   (println "to connect:")
   (println "clj -e '(clojure.core.server/remote-prepl \"127.0.0.1\" 5555 *in* println)'")
+  (println)
+  (println "or:")
+  (println "telnet localhost 5555")
   ;; wait forever
   @(promise))
 

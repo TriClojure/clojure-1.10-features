@@ -64,8 +64,8 @@ A demonstration of `clojure.core.server/io-repl`, a convenience layer on top of
 `prepl` suitable for use over a network via e.g. a socket REPL.
 
 After starting the REPL server by running `clj -m demo.io-repl`, you can connect
-from another REPL using `clojure.core.server/remote-prepl` and start sending
-over forms to be evaluated.
+from another REPL using `clojure.core.server/remote-prepl` (or simply `telnet`)
+and start sending over forms to be evaluated.
 
 ### `demo.datafy`
 
